@@ -37,17 +37,36 @@
       text-decoration: underline;
     }
 
-    h1 {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .content {
-      padding: 20px;
-      margin: 0 20px;
+    /* Go Back Button */
+    .go-back-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
       font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 20px;
     }
 
+    .go-back-btn:hover {
+      background-color: #555;
+    }
+
+    /* Content Section */
+    .content {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .content p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
     footer {
       background-color: #333;
       color: white;
@@ -64,26 +83,40 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 10px 0;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Go Back Button -->
+  <a href="javascript:history.back()" class="go-back-btn">Go Back</a>
 
   <!-- Navigation Bar -->
   <nav>
     <ul>
       <li><a href="home.html">Home</a></li>
       <li><a href="index.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>  <!-- Link to About Page -->
+      <li><a href="about.html">About</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- About Section -->
-  <h1>About My Hobby Blog</h1>
+  <!-- About Page Content -->
   <div class="content">
+    <h1>About My Hobby Blog</h1>
     <p>Welcome to My Hobby Blog! This blog is dedicated to sharing my passion for various hobbies, including crafting, reading, and exploring new activities. Whether you're a beginner or an experienced enthusiast, this blog aims to provide useful tips, tutorials, and inspiration for all hobbyists.</p>
-    <p>Join me as I dive into the world of creativity and self-expression through my hobbies. I hope you find something here that sparks your interest and encourages you to explore new hobbies of your own!</p>
   </div>
 
   <!-- Footer Section -->
