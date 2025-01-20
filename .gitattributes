@@ -1,9 +1,0 @@
-\# filter=lfs diff=lfs merge=lfs -text
-Enables filter=lfs diff=lfs merge=lfs -text
-Large filter=lfs diff=lfs merge=lfs -text
-File filter=lfs diff=lfs merge=lfs -text
-Storage filter=lfs diff=lfs merge=lfs -text
-image filter=lfs diff=lfs merge=lfs -text
-Git filter=lfs diff=lfs merge=lfs -text
-for filter=lfs diff=lfs merge=lfs -text
-files filter=lfs diff=lfs merge=lfs -text
