@@ -67,4 +67,14 @@ footer {
   .go-back-btn:hover {
     background-color: #45a049;
   }
+  nav ul {
+    list-style-type: none; /* Removes bullets or dots */
+    padding: 0; /* Removes default padding */
+  }
+  
+  nav ul li {
+    display: inline; /* Makes the list items display inline */
+    margin-right: 20px; /* Adjust spacing between items */
+  }
+  
   
