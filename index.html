@@ -3,184 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Hobby Blog</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
-
-    nav ul {
-      display: flex;
-      list-style-type: none;
-      justify-content: center;
-    }
-
-    nav li {
-      margin: 0 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Search Section */
-    #search {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    #search input {
-      padding: 10px;
-      font-size: 16px;
-      width: 300px;
-      margin-right: 10px;
-    }
-
-    #search button {
-      padding: 10px 15px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: #333;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
-    #search button:hover {
-      background-color: #555;
-    }
-
-    /* Gallery Section */
-    #gallery {
-      margin-top: 50px;
-      text-align: center;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-      justify-items: center;
-    }
-
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    .gallery-grid img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    footer a {
-      color: #ff6347;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive Design */
-    @media screen and (max-width: 768px) {
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav li {
-        margin: 10px 0;
-      }
-
-      #search input {
-        width: 80%;
-      }
-    }
-  </style>
+  <title>Home - My Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Welcome to My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>  <!-- Link to Home Page -->
-      <li><a href="index.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>  <!-- Link to About Page -->
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Search Section -->
-  <section id="search">
-    <h2>Search</h2>
-    <input type="text" id="searchBar" placeholder="Search for something...">
-    <button onclick="searchContent()">Search</button>
+  <section>
+    <h2>Welcome to My Blog</h2>
+    <p>This is the homepage of my blog where I share posts about various topics that interest me.</p>
   </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="image1.jpg" alt="Image 1">
-      <img src="image2.jpg" alt="Image 2">
-      <img src="image3.jpg" alt="Image 3">
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 My Hobby Blog | Follow me on:
-      <a href="https://twitter.com/yourusername" target="_blank">Twitter</a> |
-      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-    </p>
-  </footer>
-
-  <script>
-    // Search Functionality
-    function searchContent() {
-      const query = document.getElementById('searchBar').value;
-      alert('You searched for: ' + query);
-    }
-
-    // Gallery Image Click Alert
-    const galleryImages = document.querySelectorAll('.gallery-grid img');
-    galleryImages.forEach(image => {
-      image.addEventListener('click', () => {
-        alert('You clicked on an image!');
-      });
-    });
-  </script>
-
 </body>
 </html>
