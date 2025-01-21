@@ -102,19 +102,25 @@ footer {
   font-size: 14px;
   color: #666; /* Optional: Gray text for the footer */
 }
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ffdbac; /* New background color */
-  color: #000; /* Black text for contrast */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.go-back-button {
+    display: block;
+    width: 150px;  /* Adjust the button width if needed */
+    padding: 10px 20px;
+    margin: 50px auto;  /* Auto margin on left and right to center the button */
+    text-align: center;
+    background-color: #ffdbac; /* Button color */
+    color: black;
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px;  /* Rounded corners for the button */
+    font-size: 16px;  /* Adjust text size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #e6c49a; /* Slightly darker shade for hover effect */
+.go-back-button:hover {
+    background-color: #e2c8a5; /* Hover effect */
 }
+
 
 /* General page styling */
 body {
