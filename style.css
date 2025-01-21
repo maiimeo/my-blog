@@ -5,6 +5,27 @@ body {
     padding: 0;
     background-color: #F2ECE3;  /* Soft beige */
     color: #4A4A4A;  /* Warm dark grey */
+    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Makes the main content flexible and pushes the footer to the bottom */
+}
+
+/* Footer */
+footer {
+    background-color: #E6D4D2;  /* Soft yellow beige */
+    color: #4A4A4A;  /* Dark grey */
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Ensures footer will stay at the bottom of the page */
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px; /* Adds some space before the footer */
+    /* For fixed footer at all times: position: fixed; bottom: 0; */
 }
 
 /* Header */
@@ -82,30 +103,6 @@ section p {
 .go-back-button:hover {
     background-color: #F3C6B8;  /* Dusty rose */
 }
-
-/* Footer */
-footer {
-    background-color: #E6D4D2;  /* Soft yellow beige */
-    color: #4A4A4A;  /* Dark grey */
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    font-size: 14px;
-    margin-top: 20px; /* Adds some space before the footer */
-}
-
-/* Ensure the content fills the page so the footer stays at the bottom */
-body {
-    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1; /* Makes the main content flexible and pushes the footer to the bottom */
-}
-
 
 /* Country Section */
 .country-container {
