@@ -69,12 +69,12 @@ section p {
     position: absolute;
     top: 0px;
     left: 20px;
-    padding: 10px 20px;
+    padding: 6px 12px;
     background-color: #D8D5D0;  /* Light greyish pastel */
     color: #4A4A4A;  /* Dark grey */
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
