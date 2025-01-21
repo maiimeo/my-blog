@@ -80,7 +80,6 @@ section p {
     background-color: #e2c8a5;
 }
 
-
 /* Footer */
 footer {
     background-color: #444;
@@ -143,7 +142,6 @@ footer {
     text-decoration: none;
 }
 
-
 /* Button Styling */
 button {
     background-color: #ffdbac;
@@ -159,8 +157,6 @@ button:hover {
     background-color: #e6c49a;
 }
 
-
-
 /* Remove list styling */
 nav ul {
     list-style-type: none;  /* Removes bullet points */
@@ -171,7 +167,6 @@ nav ul {
     gap: 20px;              /* Adds space between the menu items */
 }
 
-
 /* Blog Page Paragraphs */
 .blog-page {
     font-family: "Courier New", Courier, monospace;
@@ -181,3 +176,49 @@ nav ul {
     text-align: justify; /* Justifies the text */
 }
 
+/* Blog Page Specific Styles */
+
+/* Blog List */
+.post {
+    margin: 15px 0;
+    background-color: #ffe6f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.post a {
+    text-decoration: none;
+    color: #ff3366;
+    font-size: 1.5em;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post a:hover {
+    color: #ff80ab;
+}
+
+/* Go Back Button Styling for Blog */
+.go-back-button {
+    background-color: #ff80ab;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: #ff3366;
+}
