@@ -398,11 +398,12 @@ nav ul {
     background-color: #D8B7A6; /* Warm beige hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
-/* Remove bullet points from lists */
+/* Remove bullet points from both Ingredients and Tips lists */
 ul.ingredients-list, ul.tips-list {
-    list-style-type: none;  /* Removes the dots */
+    list-style-type: none;  /* Removes the dots for both lists */
     padding-left: 0;        /* Removes default padding */
 }
+
 
 /* Last Updated Section */
 .last-updated {
