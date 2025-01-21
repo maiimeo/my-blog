@@ -338,7 +338,7 @@ nav ul {
 
 /* Ingredient List */
 .ingredients-list {
-    list-style-type: none;
+    list-style-type: square;
     margin: 20px 0;
     padding-left: 40px;
     font-size: 1.2em;
@@ -398,6 +398,12 @@ nav ul {
     background-color: #D8B7A6; /* Warm beige hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
+/* Remove bullet points from lists */
+ul.ingredients-list, ul.tips-list {
+    list-style-type: none;  /* Removes the dots */
+    padding-left: 0;        /* Removes default padding */
+}
+
 /* Last Updated Section */
 .last-updated {
     text-align: center;
