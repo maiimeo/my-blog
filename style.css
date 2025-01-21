@@ -64,7 +64,7 @@ section p {
 
 .go-back-button {
     position: absolute;
-    top: 10px;  /* Adjust distance from the top */
+    top: 5px;  /* Adjust distance from the top */
     left: 20px;  /* Adjust distance from the left */
     padding: 10px 20px;
     background-color: #ffdbac;
