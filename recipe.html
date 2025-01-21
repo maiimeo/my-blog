@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        // Dynamically add the last updated time to the page
-        window.onload = function() {
-            const lastUpdatedElement = document.getElementById('last-updated');
-            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-            const now = new Date().toLocaleDateString('en-US', options);
-            lastUpdatedElement.textContent = `Last Updated: ${now}`;
-        };
-    </script>
+    
 </head>
 <body>
     <header>
