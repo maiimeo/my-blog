@@ -90,10 +90,22 @@ footer {
     text-align: center;
     padding: 20px 0;
     position: relative;
-    bottom: 0;
     width: 100%;
     font-size: 14px;
+    margin-top: 20px; /* Adds some space before the footer */
 }
+
+/* Ensure the content fills the page so the footer stays at the bottom */
+body {
+    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Makes the main content flexible and pushes the footer to the bottom */
+}
+
 
 /* Country Section */
 .country-container {
