@@ -73,4 +73,15 @@ body {
     bottom: 0;
     width: 100%;
   }
-  
+  /* Remove dots from the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Remove padding around list items */
+nav ul li {
+  padding: 0;
+  margin: 0;
+}
