@@ -181,8 +181,8 @@ nav ul {
 /* Blog Page Paragraphs */
 .blog-page {
     font-family: "Georgia", serif;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
     font-weight: bold;
     text-align: justify;
     line-height: 1.8; /* Increase line height for better readability */
@@ -191,17 +191,6 @@ nav ul {
     font-size: 1.0em;
 }
 
-/* Header - Assuming you have a class like .header */
-.header {
-    padding-left: 0; /* Or set your preferred padding */
-    padding-right: 0; /* Or set your preferred padding */
-}
-
-/* Footer - Assuming you have a class like .footer */
-.footer {
-    padding-left: 0; /* Or set your preferred padding */
-    padding-right: 0; /* Or set your preferred padding */
-}
 
 /* Blog List */
 .post {
