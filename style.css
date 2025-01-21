@@ -181,14 +181,26 @@ nav ul {
 /* Blog Page Paragraphs */
 .blog-page {
     font-family: "Georgia", serif;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-weight: bold;
     text-align: justify;
     line-height: 1.8; /* Increase line height for better readability */
     letter-spacing: 0.5px; /* Slightly increase space between characters */
     word-spacing: 2px; /* Add spacing between words */
     font-size: 1.0em;
+}
+
+/* Header - Assuming you have a class like .header */
+.header {
+    padding-left: 0; /* Or set your preferred padding */
+    padding-right: 0; /* Or set your preferred padding */
+}
+
+/* Footer - Assuming you have a class like .footer */
+.footer {
+    padding-left: 0; /* Or set your preferred padding */
+    padding-right: 0; /* Or set your preferred padding */
 }
 
 /* Blog List */
