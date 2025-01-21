@@ -94,3 +94,11 @@ nav ul li a {
 nav ul li a:hover {
   color: gray; /* Optional: Change color on hover */
 }
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #f4f4f4; /* Optional: Light background for the footer */
+  font-size: 14px;
+  color: #666; /* Optional: Gray text for the footer */
+}
