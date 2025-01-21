@@ -3,13 +3,13 @@ body {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #F2ECE3;  /* Soft beige */
+    background-color: #B9B8D1;  /* Soft pastel purple */
     color: #4A4A4A;  /* Warm dark grey */
 }
 
 /* Header */
 header {
-    background-color: #D8B7A6;  /* Warm beige */
+    background-color: #A7B3D1;  /* Muted pastel blue */
     padding: 20px;
     text-align: center;
 }
@@ -24,7 +24,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #F3C6B8;  /* Dusty rose */
+    background-color: #D8D5D0;  /* Light greyish pastel */
     padding: 10px 0;
 }
 
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #D8B7A6;  /* Warm beige */
+    color: #A7B3D1;  /* Muted pastel blue */
 }
 
 /* Section */
@@ -49,12 +49,12 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #D8B7A6;  /* Warm beige */
+    color: #A7B3D1;  /* Muted pastel blue */
 }
 
 section p {
     font-size: 1.2em;
-    color: #7D6A5E;  /* Soft brown */
+    color: #6A6A6A;  /* Muted grey */
 }
 
 .profile-pic {
@@ -70,7 +70,7 @@ section p {
     top: 0px;
     left: 20px;
     padding: 10px 20px;
-    background-color: #D8B7A6;  /* Warm beige */
+    background-color: #D8D5D0;  /* Light greyish pastel */
     color: #4A4A4A;  /* Dark grey */
     text-decoration: none;
     border-radius: 5px;
@@ -80,13 +80,13 @@ section p {
 }
 
 .go-back-button:hover {
-    background-color: #F3C6B8;  /* Dusty rose */
+    background-color: #B9B8D1;  /* Soft pastel purple */
 }
 
 /* Footer */
 footer {
-    background-color: #7D6A5E;  /* Soft brown */
-    color: #ECE6DB;  /* Soft beige */
+    background-color: #6A6A6A;  /* Muted grey */
+    color: #D8D5D0;  /* Light greyish pastel */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -105,7 +105,7 @@ footer {
 
 .country-card {
     background-color: white;
-    border: 2px solid #F3C6B8;  /* Dusty rose */
+    border: 2px solid #A7B3D1;  /* Muted pastel blue */
     border-radius: 10px;
     width: 250px;
     margin: 10px;
@@ -135,18 +135,18 @@ footer {
 
 .country-card p {
     font-size: 1rem;
-    color: #7D6A5E;  /* Soft brown */
+    color: #6A6A6A;  /* Muted grey */
     margin-top: 10px;
 }
 
 .country-card a {
     text-decoration: none;
-    color: #F3C6B8;  /* Dusty rose */
+    color: #A7B3D1;  /* Muted pastel blue */
 }
 
 /* Button Styling */
 button {
-    background-color: #D8B7A6;  /* Warm beige */
+    background-color: #D8D5D0;  /* Light greyish pastel */
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -156,7 +156,7 @@ button {
 }
 
 button:hover {
-    background-color: #F3C6B8;  /* Dusty rose */
+    background-color: #A7B3D1;  /* Muted pastel blue */
 }
 
 /* Remove list styling */
@@ -181,7 +181,7 @@ nav ul {
 /* Blog List */
 .post {
     margin: 15px 0;
-    background-color: #F2ECE3;  /* Soft beige */
+    background-color: #B9B8D1;  /* Soft pastel purple */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -194,7 +194,7 @@ nav ul {
 
 .post a {
     text-decoration: none;
-    color: #F3C6B8;  /* Dusty rose */
+    color: #A7B3D1;  /* Muted pastel blue */
     font-size: 1.5em;
 }
 
@@ -203,12 +203,12 @@ nav ul {
 }
 
 .post a:hover {
-    color: #D8B7A6;  /* Warm beige hover */
+    color: #D8D5D0;  /* Light greyish pastel hover */
 }
 
 /* Go Back Button Styling for Blog */
 .go-back-button {
-    background-color: #D8B7A6;  /* Warm beige */
+    background-color: #D8D5D0;  /* Light greyish pastel */
     color: #4A4A4A;  /* Dark grey */
     padding: 10px 20px;
     font-size: 1.2em;
@@ -220,5 +220,5 @@ nav ul {
 }
 
 .go-back-button:hover {
-    background-color: #F3C6B8;  /* Dusty rose */
+    background-color: #A7B3D1;  /* Muted pastel blue */
 }
