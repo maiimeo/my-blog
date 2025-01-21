@@ -73,15 +73,24 @@ body {
     bottom: 0;
     width: 100%;
   }
-  /* Remove dots from the navigation menu */
+/* Remove list styling and default padding/margin */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Optional: Center the menu items horizontally */
+  gap: 20px; /* Add space between menu items */
 }
 
-/* Optional: Remove padding around list items */
-nav ul li {
-  padding: 0;
-  margin: 0;
+/* Style individual links */
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Adjust to match your theme */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: gray; /* Optional: Change color on hover */
 }
