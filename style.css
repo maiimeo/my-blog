@@ -177,6 +177,7 @@ nav ul {
     font-family: "Courier New", Courier, monospace;
     padding-left: 30px;  /* Moves the text slightly to the right */
     padding-right: 30px;
+    font-weight: bold;
     text-align: justify; /* Justifies the text */
 }
 
