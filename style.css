@@ -3,13 +3,13 @@ body {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f1e8;  /* Soft beige background */
-    color: #4f4a46;  /* Dark brown text */
+    background-color: #f9f1e0;  /* Lighter beige background */
+    color: #5a4b43;  /* Lighter dark brown text */
 }
 
 /* Header */
 header {
-    background-color: #d87c3b;  /* Autumn orange */
+    background-color: #f5a539;  /* Lighter autumn orange */
     padding: 20px;
     text-align: center;
 }
@@ -24,7 +24,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #a15c29;  /* Warm brown */
+    background-color: #a97c56;  /* Lighter warm brown */
     padding: 10px 0;
 }
 
@@ -37,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d87c3b;  /* Autumn orange hover */
+    color: #f5a539;  /* Lighter autumn orange hover */
 }
 
 /* Section */
@@ -49,12 +49,12 @@ section {
 section h2 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #d87c3b;  /* Autumn orange */
+    color: #f5a539;  /* Lighter autumn orange */
 }
 
 section p {
     font-size: 1.2em;
-    color: #5e4a3c;  /* Darker brown text */
+    color: #6c5b3d;  /* Lighter dark brown text */
 }
 
 .profile-pic {
@@ -70,7 +70,7 @@ section p {
     top: 0px;
     left: 20px;
     padding: 10px 20px;
-    background-color: #a15c29;  /* Warm brown */
+    background-color: #a97c56;  /* Lighter warm brown */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -80,13 +80,13 @@ section p {
 }
 
 .go-back-button:hover {
-    background-color: #d87c3b;  /* Autumn orange */
+    background-color: #f5a539;  /* Lighter autumn orange */
 }
 
 /* Footer */
 footer {
-    background-color: #4f4a46;  /* Dark brown */
-    color: #f5f1e8;  /* Soft beige */
+    background-color: #7c6b56;  /* Lighter brown */
+    color: #f9f1e0;  /* Soft beige */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -105,7 +105,7 @@ footer {
 
 .country-card {
     background-color: white;
-    border: 2px solid #d87c3b;  /* Autumn orange */
+    border: 2px solid #f5a539;  /* Lighter autumn orange */
     border-radius: 10px;
     width: 250px;
     margin: 10px;
@@ -129,24 +129,24 @@ footer {
 
 .country-card h2 {
     font-size: 1.5rem;
-    color: #4f4a46;  /* Dark brown */
+    color: #5a4b43;  /* Lighter dark brown */
     margin-top: 10px;
 }
 
 .country-card p {
     font-size: 1rem;
-    color: #7a5a3e;  /* Muted brown */
+    color: #8e7d65;  /* Lighter muted brown */
     margin-top: 10px;
 }
 
 .country-card a {
     text-decoration: none;
-    color: #a15c29;  /* Warm brown */
+    color: #a97c56;  /* Lighter warm brown */
 }
 
 /* Button Styling */
 button {
-    background-color: #d87c3b;  /* Autumn orange */
+    background-color: #f5a539;  /* Lighter autumn orange */
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -156,7 +156,7 @@ button {
 }
 
 button:hover {
-    background-color: #a15c29;  /* Warm brown */
+    background-color: #a97c56;  /* Lighter warm brown */
 }
 
 /* Remove list styling */
@@ -183,7 +183,7 @@ nav ul {
 /* Blog List */
 .post {
     margin: 15px 0;
-    background-color: #f8d4b3;  /* Soft light beige with a hint of autumn */
+    background-color: #f9e0b8;  /* Light beige with a hint of autumn */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -196,7 +196,7 @@ nav ul {
 
 .post a {
     text-decoration: none;
-    color: #a15c29;  /* Warm brown */
+    color: #a97c56;  /* Lighter warm brown */
     font-size: 1.5em;
 }
 
@@ -205,12 +205,12 @@ nav ul {
 }
 
 .post a:hover {
-    color: #d87c3b;  /* Autumn orange hover */
+    color: #f5a539;  /* Lighter autumn orange hover */
 }
 
 /* Go Back Button Styling for Blog */
 .go-back-button {
-    background-color: #d87c3b;  /* Autumn orange */
+    background-color: #f5a539;  /* Lighter autumn orange */
     color: white;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -222,5 +222,5 @@ nav ul {
 }
 
 .go-back-button:hover {
-    background-color: #a15c29;  /* Warm brown */
+    background-color: #a97c56;  /* Lighter warm brown */
 }
