@@ -1,135 +1,13 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background-color: #ffdbac;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #444;
-  }
-  
-  /* Navigation */
-  nav {
-    display: flex;
-    justify-content: center;
-    background-color: #ffb347;
-    padding: 10px 0;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #333;
-  }
-  
-  /* Section */
-  section {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  section p {
-    font-size: 1.2em;
-    color: #555;
-  }
-  
-  .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-top: 15px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-/* Remove list styling and default padding/margin */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Arrange items in a row */
-  justify-content: center; /* Optional: Center the menu items horizontally */
-  gap: 20px; /* Add space between menu items */
-}
-
-/* Style individual links */
-nav ul li a {
-  text-decoration: none;
-  color: black; /* Adjust to match your theme */
-  font-size: 18px;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: gray; /* Optional: Change color on hover */
-}
-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding: 10px 0;
-  background-color: #f4f4f4; /* Optional: Light background for the footer */
-  font-size: 14px;
-  color: #666; /* Optional: Gray text for the footer */
-}
-.go-back-button {
-    display: block;
-    width: 150px;  /* Adjust the button width if needed */
-    padding: 10px 20px;
-    margin: 50px auto;  /* Auto margin on left and right to center the button */
-    text-align: center;
-    background-color: #ffdbac; /* Button color */
-    color: black;
-    text-decoration: none; /* Removes underline */
-    border-radius: 5px;  /* Rounded corners for the button */
-    font-size: 16px;  /* Adjust text size */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    transition: background-color 0.3s;
-}
-
-.go-back-button:hover {
-    background-color: #e2c8a5; /* Hover effect */
-}
-
-
-/* General page styling */
-body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Header */
 header {
     background-color: #ffdbac;
     padding: 20px;
@@ -141,18 +19,83 @@ header h1 {
     font-size: 2.5rem;
 }
 
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffb347;
+    padding: 10px 0;
+}
+
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #ffdbac;
+    color: #333;
 }
 
-/* Section for countries */
+/* Section */
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* Go Back Button */
+.go-back-button {
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #ffdbac;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.go-back-button:hover {
+    background-color: #e2c8a5;
+}
+
+/* Footer */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    background-color: #f4f4f4;
+}
+
+/* Country Section */
 .country-container {
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +138,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* Button styling */
+/* Button Styling */
 button {
     background-color: #ffdbac;
     padding: 10px 20px;
