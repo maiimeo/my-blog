@@ -137,6 +137,12 @@ footer {
     margin-top: 10px;
 }
 
+/* Remove underline from links in the country card */
+.country-card a {
+    text-decoration: none;
+}
+
+
 /* Button Styling */
 button {
     background-color: #ffdbac;
