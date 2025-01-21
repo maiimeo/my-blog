@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Dynamically add the last updated time to the page
+        window.onload = function() {
+            const lastUpdatedElement = document.getElementById('last-updated');
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const now = new Date().toLocaleDateString('en-US', options);
+            lastUpdatedElement.textContent = `Last Updated: ${now}`;
+        };
+    </script>
 </head>
 <body>
     <header>
-        <h1>Cooking Recipes</h1>
+        <h1 class="header-title">Cooking Recipes</h1>
+        <p class="subtitle">Delicious recipes for every occasion!</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,27 +30,38 @@
     </header>
 
     <main>
-        <div class="post">
-            <h2><a href="recipe1.html">&#127799; Recipe 1 - abc</a></h2>
-        </div>
-        <div class="post">
-            <h2><a href="recipe2.html">&#127799; Recipe 2 - abc</a></h2>
-        </div>
-        <div class="post">
-            <h2><a href="recipe3.html">&#127799; Recipe 3 - abc</a></h2>
-        </div>
-        <div class="post">
-            <h2><a href="recipe44.html">&#127799; Recipe 4 - abc</a></h2>
-        </div>
-        <div class="post">
-            <h2><a href="recipe5.html">&#127799; Recipe 5 - abc</a></h2>
-        </div>
-          <!-- Go Back Button -->
-          <button onclick="window.location.href='index.html'" class="go-back-button">Go Back</button>
+        <section class="recipe-list">
+            <div class="post">
+                <h2><a href="recipe1.html">&#127799; Recipe 1 - abc</a></h2>
+            </div>
+            <div class="post">
+                <h2><a href="recipe2.html">&#127799; Recipe 2 - abc</a></h2>
+            </div>
+            <div class="post">
+                <h2><a href="recipe3.html">&#127799; Recipe 3 - abc</a></h2>
+            </div>
+            <div class="post">
+                <h2><a href="recipe44.html">&#127799; Recipe 4 - abc</a></h2>
+            </div>
+            <div class="post">
+                <h2><a href="recipe5.html">&#127799; Recipe 5 - abc</a></h2>
+            </div>
+        </section>
+
+        <!-- Go Back Button -->
+        <button onclick="window.location.href='index.html'" class="go-back-button">Go Back</button>
+
+        <!-- Last Updated Date -->
+        <div id="last-updated" class="last-updated"></div>
     </main>
 
     <footer>
         <p>&copy; 2025 Maimeo Blog. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">&#xf09a;</a>
+            <a href="https://twitter.com" target="_blank">&#xf099;</a>
+            <a href="https://instagram.com" target="_blank">&#xf16d;</a>
+        </div>
     </footer>
 </body>
 </html>
