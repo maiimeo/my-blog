@@ -206,10 +206,10 @@ nav ul {
     color: #D8B7A6;  /* Warm beige hover */
 }
 
-/* Recipe Grid Layout for Two Recipes per Row */
+/* Recipe Grid Layout for Three Recipes per Row */
 .recipe-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
     gap: 20px; /* Space between items */
     padding: 20px;
     justify-items: center;
@@ -278,3 +278,17 @@ nav ul {
     box-shadow: none;
     transition: none;
 }
+/* Responsive Design: Adjust to 2 columns on medium screens (tablets) */
+@media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Responsive Design: Adjust to 1 column on small screens (mobile) */
+@media (max-width: 480px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
