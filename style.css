@@ -176,3 +176,9 @@ nav ul {
 .blog-page {
     font-family: "Courier New", Courier, monospace;
 }
+
+/* Blog Page Paragraphs */
+.blog-page p {
+    padding-left: 15px;  /* Moves the text slightly to the right */
+    text-align: justify; /* Justifies the text */
+}
