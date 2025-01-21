@@ -105,13 +105,14 @@ footer {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
-  color: white;
+  background-color: #ffdbac; /* New background color */
+  color: #000; /* Black text for contrast */
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e6c49a; /* Slightly darker shade for hover effect */
 }
+
