@@ -403,5 +403,5 @@ nav ul {
     text-align: center;
     font-size: 14px;
     color: #4A4A4A;
-    margin: 0px 0;  /* Adds space between the last updated text and footer */
+    margin: -10px 0;  /* Adds space between the last updated text and footer */
 }
