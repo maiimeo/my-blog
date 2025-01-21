@@ -179,7 +179,7 @@ nav ul {
     line-height: 1.8; /* Increase line height for better readability */
     letter-spacing: 0.5px; /* Slightly increase space between characters */
     word-spacing: 2px; /* Add spacing between words */
-    font-size: 1.5em;
+    font-size: 1.0em;
 }
 
 /* Blog List */
