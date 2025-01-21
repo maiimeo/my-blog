@@ -164,3 +164,9 @@ nav ul {
     justify-content: center; /* Centers the menu items */
     gap: 20px;              /* Adds space between the menu items */
 }
+
+
+/* Apply Courier New font to all blog pages */
+.blog-page {
+    font-family: "Courier New", Courier, monospace;
+}
