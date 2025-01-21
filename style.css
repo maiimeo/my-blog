@@ -398,3 +398,10 @@ nav ul {
     background-color: #D8B7A6; /* Warm beige hover */
     transform: scale(1.05); /* Slight zoom effect */
 }
+/* Last Updated Section */
+.last-updated {
+    text-align: center;
+    font-size: 14px;
+    color: #4A4A4A;
+    margin: 20px 0;  /* Adds space between the last updated text and footer */
+}
