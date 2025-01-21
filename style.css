@@ -62,13 +62,11 @@ section p {
     margin-top: 15px;
 }
 
-/* Go Back Button */
 .go-back-button {
-    display: block;
-    width: 150px;
+    position: absolute;
+    top: 20px;  /* Adjust distance from the top */
+    left: 20px;  /* Adjust distance from the left */
     padding: 10px 20px;
-    margin: 50px auto;
-    text-align: center;
     background-color: #ffdbac;
     color: black;
     text-decoration: none;
@@ -81,6 +79,7 @@ section p {
 .go-back-button:hover {
     background-color: #e2c8a5;
 }
+
 
 /* Footer */
 footer {
