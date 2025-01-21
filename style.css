@@ -152,3 +152,15 @@ button {
 button:hover {
     background-color: #e6c49a;
 }
+
+
+
+/* Remove list styling */
+nav ul {
+    list-style-type: none;  /* Removes bullet points */
+    margin: 0;              /* Removes default margin */
+    padding: 0;             /* Removes default padding */
+    display: flex;          /* Arranges items in a row */
+    justify-content: center; /* Centers the menu items */
+    gap: 20px;              /* Adds space between the menu items */
+}
