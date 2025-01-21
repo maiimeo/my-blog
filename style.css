@@ -67,14 +67,14 @@ section p {
 /* Go Back Button */
 .go-back-button {
     position: absolute;
-    top: 0px;
+    top: 20px;
     left: 20px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #D8B7A6;  /* Warm beige */
     color: #4A4A4A;  /* Dark grey */
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
@@ -85,8 +85,8 @@ section p {
 
 /* Footer */
 footer {
-    background-color: #F3E6C1;  /* Soft pink */
-    color: #f7e9f5;  /* Soft pink */
+    background-color: #F3E6C1;  /* Soft yellow beige */
+    color: #4A4A4A;  /* Dark grey */
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -204,21 +204,4 @@ nav ul {
 
 .post a:hover {
     color: #D8B7A6;  /* Warm beige hover */
-}
-
-/* Go Back Button Styling for Blog */
-.go-back-button {
-    background-color: #D8B7A6;  /* Warm beige */
-    color: #4A4A4A;  /* Dark grey */
-    padding: 5px 10px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-.go-back-button:hover {
-    background-color: #F3C6B8;  /* Dusty rose */
 }
