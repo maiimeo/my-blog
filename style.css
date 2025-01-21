@@ -172,13 +172,10 @@ nav ul {
 }
 
 
-/* Apply Courier New font to all blog pages */
+/* Blog Page Paragraphs */
 .blog-page {
     font-family: "Courier New", Courier, monospace;
-}
-
-/* Blog Page Paragraphs */
-.blog-page p {
     padding-left: 15px;  /* Moves the text slightly to the right */
     text-align: justify; /* Justifies the text */
 }
+
