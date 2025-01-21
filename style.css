@@ -116,3 +116,90 @@ button:hover {
   background-color: #e6c49a; /* Slightly darker shade for hover effect */
 }
 
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffdbac;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #ffdbac;
+}
+
+/* Section for countries */
+.country-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.country-card {
+    background-color: white;
+    border: 2px solid #ffdbac;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+}
+
+.country-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.country-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.country-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #ffdbac;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e6c49a;
+}
