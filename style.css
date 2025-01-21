@@ -1,89 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
     color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-}
-
-main {
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffdbac;
     padding: 20px;
-}
-
-h1, h2 {
-    font-size: 2rem;
-}
-
-.post {
-    background-color: #fff;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #444;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffb347;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
     color: #fff;
-    margin-top: 20px;
-}
-.go-back-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s;
   }
   
-  .go-back-btn:hover {
-    background-color: #45a049;
-  }
-  nav ul {
-    list-style-type: none; /* Removes bullets or dots */
-    padding: 0; /* Removes default padding */
-  }
-  
-  nav ul li {
-    display: inline; /* Makes the list items display inline */
-    margin-right: 20px; /* Adjust spacing between items */
-  }
-  
-  .post h2 a {
-    text-decoration: none;
+  nav a:hover {
     color: #333;
-}
-
-.post h2 a:hover {
-    text-decoration: underline;
-    color: #4CAF50;
-}
-
+  }
+  
+  /* Section */
+  section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
