@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Travel trips & tips</h1>
-  </header>
-  <main>
-    <p>Explore travel destinations and experiences here.</p>
-    <!-- Go Back Button -->
-    <button onclick="goBack()">Go Back</button>
-  </main>
-  <footer>
-    <p>&copy; 2025 Maimeo Blog. All rights reserved.</p>
-  </footer>
-  <script>
-    function goBack() {
-      window.location.href = "index.html";
-    }
-  </script>
+    <header>
+        <h1>My Travel Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section class="country-container">
+        <div class="country-card">
+            <img src="https://example.com/usa.jpg" alt="USA" class="country-img">
+            <h2>USA</h2>
+            <p>Explore the beautiful landscapes and vibrant cities of the USA, from coast to coast.</p>
+        </div>
+        <div class="country-card">
+            <img src="https://example.com/japan.jpg" alt="Japan" class="country-img">
+            <h2>Japan</h2>
+            <p>Experience the unique blend of tradition and modernity in Japan, with its ancient temples and futuristic cities.</p>
+        </div>
+        <div class="country-card">
+            <img src="https://example.com/france.jpg" alt="France" class="country-img">
+            <h2>France</h2>
+            <p>Discover the charm of France, from the romantic streets of Paris to the beautiful beaches of the French Riviera.</p>
+        </div>
+        <!-- Add more country sections here -->
+    </section>
+
+    <button onclick="window.location.href='index.html'">Go Back</button>
 </body>
 </html>
-
