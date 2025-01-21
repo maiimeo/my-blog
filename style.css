@@ -176,6 +176,9 @@ nav ul {
     padding-right: 30px;
     font-weight: bold;
     text-align: justify;
+    line-height: 1.8; /* Increase line height for better readability */
+    letter-spacing: 0.5px; /* Slightly increase space between characters */
+    word-spacing: 2px; /* Add spacing between words */
 }
 
 /* Blog List */
