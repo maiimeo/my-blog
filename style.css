@@ -198,7 +198,6 @@ nav ul {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
 }
 
 .post h2 {
@@ -211,13 +210,10 @@ nav ul {
     font-size: 1.5em;
 }
 
-.post:hover {
-    transform: scale(1.05);
-}
-
 .post a:hover {
     color: #D8B7A6;  /* Warm beige hover */
 }
+
 
 /* Recipe Grid Layout for Three Recipes per Row */
 .recipe-grid {
