@@ -296,3 +296,93 @@ nav ul {
     }
 }
 
+/* Recipe Page Styling */
+.recipe-page {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+/* Recipe Title */
+.recipe-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A4A4A; /* Dark grey */
+    margin-bottom: 10px;
+}
+
+/* Recipe Subtitle */
+.recipe-page h2 {
+    font-size: 1.8rem;
+    color: #D8B7A6; /* Warm beige */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Ingredient List */
+.ingredients-list {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 40px;
+    font-size: 1.2em;
+    color: #7D6A5E; /* Soft brown */
+}
+
+/* Instructions Styling */
+.instructions {
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.8; /* Improved readability */
+    font-size: 1.1em;
+    color: #4A4A4A; /* Dark grey */
+    text-align: justify;
+}
+
+/* Highlight Important Steps */
+.instructions span {
+    font-weight: bold;
+    color: #D8B7A6; /* Warm beige for emphasis */
+}
+
+/* Decorative Divider */
+.divider {
+    margin: 30px 0;
+    border: none;
+    border-top: 2px dashed #D8B7A6; /* Warm beige dashed line */
+}
+
+/* Image Styling */
+.recipe-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Go Back Button */
+.recipe-page .go-back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #F3C6B8; /* Dusty rose */
+    padding: 10px 15px;
+    color: #4A4A4A; /* Dark grey */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.recipe-page .go-back-button:hover {
+    background-color: #D8B7A6; /* Warm beige hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
