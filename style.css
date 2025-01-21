@@ -67,7 +67,7 @@ section p {
 /* Go Back Button */
 .go-back-button {
     position: absolute;
-    top: 20px;
+    top: -10px;
     left: 20px;
     padding: 5px 10px;
     background-color: #D8B7A6;  /* Warm beige */
