@@ -474,29 +474,3 @@ ul.ingredients-list, ul.tips-list {
     }
 }
 
-/* ==========================================
-   Responsive Styles for Blog Content
-   ========================================== */
-.blog {
-    width: 100%; /* Set content width to fit the screen */
-    max-width: 100%; /* Prevent overflowing */
-    word-wrap: break-word; /* Break long words */
-    overflow-wrap: break-word; /* Break text on line overflow */
-    padding: 10px; /* Add some padding for better readability */
-    font-size: 16px; /* Set a readable font size */
-}
-
-/* Responsive Font Scaling */
-@media (max-width: 768px) {
-    .blog {
-        font-size: 14px; /* Smaller font for phones */
-        line-height: 1.5; /* Add spacing for better readability */
-    }
-}
-
-@media (max-width: 480px) {
-    .blog {
-        font-size: 12px; /* Adjust text size for very small devices */
-        line-height: 1.6;
-    }
-}
