@@ -183,7 +183,7 @@ nav ul {
     font-family: "Georgia", serif;
     padding-left: 150px;
     padding-right: 150px;
-    font-weight: bold;
+    font-weight: normal;
     text-align: justify;
     line-height: 1.8; /* Increase line height for better readability */
     letter-spacing: 0.5px; /* Slightly increase space between characters */
