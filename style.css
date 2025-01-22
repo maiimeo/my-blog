@@ -429,8 +429,8 @@ ul.ingredients-list, ul.tips-list {
     will-change: transform, opacity; /* Optimization for performance */
     
     /* Bigger bubble size */
-    width: 100px; /* Set bubble size */
-    height: 100px; /* Set bubble size */
+    width: 200px; /* Set bubble size */
+    height: 200px; /* Set bubble size */
 }
 
 /* Keyframes for bubble animation */
