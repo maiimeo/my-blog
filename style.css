@@ -408,46 +408,39 @@ ul.ingredients-list, ul.tips-list {
 }
 
 
+/* The container spans the entire viewport */
 #bubbles-container {
-    position: fixed; /* Make it cover the whole viewport */
+    position: fixed; /* Covers the entire viewport */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Prevent interference with clicks */
-    z-index: -1; /* Ensure it stays behind the content */
+    pointer-events: none; /* Prevent interactions */
+    z-index: -1; /* Keep it behind the content */
 }
 
+/* Bubbles styling */
 .bubble {
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.6); /* Transparent white */
-    animation: float infinite ease-in-out;
+    animation: float 20s infinite; /* Float animation */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth floating */
+    will-change: transform, opacity; /* Optimization */
 }
 
-
-/* Individual bubbles */
-.bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6); /* Transparent white */
-    animation: float infinite ease-in-out;
-    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth motion */
-}
-
-
-/* Animation for bubbles */
+/* Keyframes for bubble animation */
 @keyframes float {
     0% {
-        transform: translate(0, 0); /* Start from initial position */
-        opacity: 0.6;
+        transform: translate(0, 0); /* Start position */
+        opacity: 0.6; /* Partially visible */
     }
     50% {
-        transform: translate(50vw, -50vh); /* Move diagonally */
-        opacity: 0.9;
+        transform: translate(30vw, -40vh); /* Float diagonally */
+        opacity: 0.9; /* Brighten slightly */
     }
     100% {
-        transform: translate(-50vw, -100vh); /* End offscreen */
-        opacity: 0;
+        transform: translate(-30vw, -100vh); /* End position offscreen */
+        opacity: 0; /* Fade out */
     }
 }
