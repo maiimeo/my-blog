@@ -416,14 +416,14 @@ ul.ingredients-list, ul.tips-list {
     height: 100%;
     pointer-events: none;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1; /* Ensure bubbles appear above the background */
 }
 
 /* Individual bubbles */
 .bubble {
     position: absolute;
     border-radius: 50%;
-    background: rgba(0, 128, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6); /* Transparent white */
     animation: float 6s ease-in-out infinite;
 }
 
