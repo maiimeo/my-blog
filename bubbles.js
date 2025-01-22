@@ -27,7 +27,7 @@ for (let i = 0; i < 30; i++) {
     // Add custom keyframes for this bubble
     const styleSheet = document.styleSheets[0];
     const keyframes = `
-        @keyframes float {
+        @keyframes float-${i} {
             0% {
                 transform: translateY(0) translateX(0);
                 opacity: 0.6;
@@ -44,6 +44,6 @@ for (let i = 0; i < 30; i++) {
     `;
     styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 
-    // Add the bubble to the container
+    bubble.style.animationName = `float-${i}`; // Assign unique animation name
     container.appendChild(bubble);
 }
