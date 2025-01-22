@@ -106,18 +106,20 @@ section p {
 
 /* Country Section */
 .country-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Space between items */
     padding: 20px;
+    justify-items: center;
 }
 
 .country-card {
     background-color: white;
     border: 2px solid #F3C6B8;  /* Dusty rose */
     border-radius: 10px;
-    width: 250px;
-    margin: 10px;
+    width: 100%;
+    max-width: 300px; /* Limit the width of each card */
+    margin: 0 auto; /* Center cards within their grid cells */
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -152,6 +154,21 @@ section p {
     text-decoration: none;
     color: #F3C6B8;  /* Dusty rose */
 }
+
+/* Responsive Design: Adjust to 2 columns on medium screens (tablets) */
+@media (max-width: 768px) {
+    .country-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Responsive Design: Adjust to 1 column on small screens (mobile) */
+@media (max-width: 480px) {
+    .country-container {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
 /* Button Styling */
 button {
     background-color: #D8B7A6;  /* Warm beige */
