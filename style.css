@@ -414,6 +414,16 @@ ul.ingredients-list, ul.tips-list {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow */
 }
 
+.recipe-frame {
+    border: 2px solid #333; /* Dark border for the frame */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Max width for the frame */
+    background-color: #f9f9f9; /* Light background for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
 
 /* Last Updated Section */
 .last-updated {
