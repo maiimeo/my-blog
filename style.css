@@ -408,39 +408,39 @@ ul.ingredients-list, ul.tips-list {
 }
 
 
-/* The container spans the entire viewport */
+/* Container for bubbles */
 #bubbles-container {
     position: fixed; /* Covers the entire viewport */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Prevent interactions */
-    z-index: -1; /* Keep it behind the content */
+    pointer-events: none; /* Prevent interference with clicks */
+    z-index: 1; /* Keep it above the background but below content */
 }
 
 /* Bubbles styling */
 .bubble {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6); /* Transparent white */
+    background: rgba(255, 255, 255, 0.3); /* Transparent effect */
     animation: float 20s infinite; /* Float animation */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth floating */
-    will-change: transform, opacity; /* Optimization */
+    will-change: transform, opacity; /* Optimization for performance */
 }
 
 /* Keyframes for bubble animation */
 @keyframes float {
     0% {
         transform: translate(0, 0); /* Start position */
-        opacity: 0.6; /* Partially visible */
+        opacity: 0.3; /* Start with some transparency */
     }
     50% {
         transform: translate(30vw, -40vh); /* Float diagonally */
-        opacity: 0.9; /* Brighten slightly */
+        opacity: 0.5; /* Become slightly more visible */
     }
     100% {
-        transform: translate(-30vw, -100vh); /* End position offscreen */
-        opacity: 0; /* Fade out */
+        transform: translate(-30vw, -100vh); /* End offscreen */
+        opacity: 0; /* Fade out completely */
     }
 }
