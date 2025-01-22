@@ -14,8 +14,8 @@ for (let i = 0; i < 30; i++) {
     bubble.style.left = `${Math.random() * 100}%`;
     bubble.style.top = `${Math.random() * 100}%`;
 
-    // Random animation duration and delay
-    bubble.style.animationDuration = `${Math.random() * 5 + 5}s`; // Between 5s and 10s
+    // Increase animation duration to make bubbles move slowly
+    bubble.style.animationDuration = `${Math.random() * 10 + 15}s`; // Between 15s and 25s
     bubble.style.animationDelay = `${Math.random() * 5}s`;
 
     // Add the bubble to the container
