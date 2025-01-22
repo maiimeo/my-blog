@@ -424,11 +424,11 @@ ul.ingredients-list, ul.tips-list {
     }
 }
 
-/* Floating Bubbles Effect */
+/* Floating and Moving Bubbles Effect */
 @keyframes floatBubbles {
-    0% { opacity: 0; transform: translateY(0); }
-    50% { opacity: 1; transform: translateY(-20px); }
-    100% { opacity: 0; transform: translateY(0); }
+    0% { opacity: 0; transform: translateY(0) translateX(0); }
+    50% { opacity: 1; transform: translateY(-30px) translateX(10px); }
+    100% { opacity: 0; transform: translateY(0) translateX(-10px); }
 }
 
 /* Bubble Styles */
