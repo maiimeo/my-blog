@@ -427,6 +427,10 @@ ul.ingredients-list, ul.tips-list {
     animation: float 20s infinite; /* Float animation */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth floating */
     will-change: transform, opacity; /* Optimization for performance */
+    
+    /* Bigger bubble size */
+    width: 100px; /* Set bubble size */
+    height: 100px; /* Set bubble size */
 }
 
 /* Keyframes for bubble animation */
