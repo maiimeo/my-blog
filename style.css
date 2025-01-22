@@ -424,20 +424,94 @@ ul.ingredients-list, ul.tips-list {
     }
 }
 
-/* Add floating bubbles to the background of the page */
-.bubbles {
+/* Floating Bubbles Effect */
+@keyframes floatBubbles {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+/* Create random bubbles across the screen */
+.bubble {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
     animation: floatBubbles 6s ease-in-out infinite;
     pointer-events: none;
+    opacity: 0;
 }
 
-.bubbles:nth-child(odd) {
+.bubble:nth-child(odd) {
     animation-duration: 7s;
 }
 
+.bubble:nth-child(even) {
+    animation-duration: 6s;
+}
+
+.bubble1 {
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble2 {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 20%;
+    animation-delay: 1s;
+}
+
+.bubble3 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.bubble4 {
+    width: 45px;
+    height: 45px;
+    top: 40%;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+.bubble5 {
+    width: 55px;
+    height: 55px;
+    top: 60%;
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.bubble6 {
+    width: 50px;
+    height: 50px;
+    top: 30%;
+    left: 60%;
+    animation-delay: 5s;
+}
+
+.bubble7 {
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 70%;
+    animation-delay: 6s;
+}
+
+/* More bubbles can be added as needed by continuing the pattern with new class names */
