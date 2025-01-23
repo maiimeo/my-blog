@@ -491,22 +491,28 @@ ul.ingredients-list, ul.tips-list {
     }
 }
 
-/* Styling for the image row */
-.image-row {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-    gap: 20px;
+/* Styling for the image grid */
+.image-grid {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Add a gap between the images */
+    padding: 20px;
 }
 
-.image-row img {
-    width: 200px;
-    height: 300px;
-    border-radius: 10px;
+.image-container {
+    flex: 1; /* Make all columns equal width */
+    text-align: center; /* Center-align images */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill its container */
+    max-width: 200px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
     cursor: pointer;
+    border-radius: 10px;
     transition: transform 0.3s;
 }
 
-.image-row img:hover {
+.image-container img:hover {
     transform: scale(1.05);
 }
