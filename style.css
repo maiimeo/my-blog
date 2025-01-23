@@ -491,3 +491,22 @@ ul.ingredients-list, ul.tips-list {
     }
 }
 
+/* Styling for the image row */
+.image-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+
+.image-row img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
