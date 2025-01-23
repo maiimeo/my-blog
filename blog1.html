@@ -26,10 +26,16 @@
         </div>
 
         <!-- Clickable Pictures Section -->
-        <div class="image-row">
-            <img src="image1_front.jpg" alt="Image 1" onclick="toggleImage(this, 'image1_front.jpg', 'image1_back.jpg')">
-            <img src="image2_front.jpg" alt="Image 2" onclick="toggleImage(this, 'image2_front.jpg', 'image2_back.jpg')">
-            <img src="image3_front.jpg" alt="Image 3" onclick="toggleImage(this, 'image3_front.jpg', 'image3_back.jpg')">
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="image1_front.jpg" alt="Image 1" onclick="toggleImage(this, 'image1_front.jpg', 'image1_back.jpg')">
+            </div>
+            <div class="image-container">
+                <img src="image2_front.jpg" alt="Image 2" onclick="toggleImage(this, 'image2_front.jpg', 'image2_back.jpg')">
+            </div>
+            <div class="image-container">
+                <img src="image3_front.jpg" alt="Image 3" onclick="toggleImage(this, 'image3_front.jpg', 'image3_back.jpg')">
+            </div>
         </div>
 
         <button onclick="window.location.href='blog.html'" class="go-back-button">Go Back</button>
