@@ -24,11 +24,26 @@
                 <li>Facts: làm biếng nấu ăn nhưng thích ăn ngon lol.</li>
             </ul>
         </div>
+
+        <!-- Clickable Pictures Section -->
+        <div class="image-row">
+            <img src="image1_front.jpg" alt="Image 1" onclick="toggleImage(this, 'image1_front.jpg', 'image1_back.jpg')">
+            <img src="image2_front.jpg" alt="Image 2" onclick="toggleImage(this, 'image2_front.jpg', 'image2_back.jpg')">
+            <img src="image3_front.jpg" alt="Image 3" onclick="toggleImage(this, 'image3_front.jpg', 'image3_back.jpg')">
+        </div>
+
         <button onclick="window.location.href='blog.html'" class="go-back-button">Go Back</button>
     </main>
 
     <footer>
         <p>&copy; 2025 Maimeo Blog. All rights reserved.</p>
     </footer>
+
+    <script>
+        // JavaScript to toggle between images
+        function toggleImage(imgElement, img1, img2) {
+            imgElement.src = imgElement.src.includes(img1) ? img2 : img1;
+        }
+    </script>
 </body>
 </html>
