@@ -506,7 +506,7 @@ ul.ingredients-list, ul.tips-list {
 
 .image-container img {
     width: 100%; /* Make the image fill its container */
-    max-width: 200px; /* Restrict maximum width */
+    max-width: 250px; /* Restrict maximum width */
     height: auto; /* Maintain aspect ratio */
     cursor: pointer;
     border-radius: 10px;
