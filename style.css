@@ -388,6 +388,21 @@ nav ul {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Container for the two images */
+.image-container {
+    display: flex;            /* Use flexbox to align the images in a row */
+    justify-content: center;  /* Center the images horizontally */
+    gap: 20px;                /* Space between the images */
+    margin-top: 20px;         /* Space above the image container */
+}
+
+/* Styling for each image inside the container */
+.image-container img {
+    max-width: 100%;           /* Make sure images don't exceed container width */
+    height: auto;              /* Maintain aspect ratio */
+    border-radius: 10px;       /* Round the corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for depth */
+}
 
 /* Go Back Button */
 .recipe-page .go-back-button {
