@@ -21,7 +21,7 @@ footer {
     color: #4A4A4A;  /* Dark grey */
     text-align: center;
     padding: 20px 0;
-    position: sticky; bottom: 0;
+    position: relative; /* Ensures footer will stay at the bottom of the page */
     width: 100%;
     font-size: 14px;
     margin-top: 20px; /* Adds some space before the footer */
@@ -210,12 +210,11 @@ nav ul {
 
 /* Blog List */
 .post {
-    background-color: #fff; /* Only define background-color once */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Only define box-shadow once */
-    margin: 20px 0;
-    padding: 20px;
+    margin: 15px 0;
+    background-color: #F2ECE3;  /* Soft beige */
+    padding: 15px;
     border-radius: 8px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post h2 {
@@ -237,8 +236,8 @@ nav ul {
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
-    gap: 20px; /* Space between items */
-    padding: 20px;
+    gap: 10px; /* Space between items */
+    padding: 10px;
     justify-items: center;
 }
 
@@ -249,7 +248,7 @@ nav ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 100%;
-    max-width: 350px; /* Maximum width for each card */
+    max-width: 300px; /* Maximum width for each card */
     transition: transform 0.3s ease;
 }
 
@@ -307,3 +306,208 @@ nav ul {
 }
 /* Responsive Design: Adjust to 2 columns on medium screens (tablets) */
 @media (max-width: 768px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Responsive Design: Adjust to 1 column on small screens (mobile) */
+@media (max-width: 480px) {
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+/* Recipe Page Styling */
+.recipe-page {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+/* Recipe Title */
+.recipe-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A4A4A; /* Dark grey */
+    margin-bottom: 10px;
+}
+
+/* Recipe Subtitle */
+.recipe-page h2 {
+    font-size: 1.8rem;
+    color: #D8B7A6; /* Warm beige */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Ingredient List */
+.ingredients-list {
+    list-style-type: square;
+    margin: 20px 0;
+    padding-left: 40px;
+    font-size: 1.2em;
+    color: #7D6A5E; /* Soft brown */
+}
+
+/* Instructions Styling */
+.instructions {
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.8; /* Improved readability */
+    font-size: 1.1em;
+    color: #4A4A4A; /* Dark grey */
+    text-align: justify;
+}
+
+/* Highlight Important Steps */
+.instructions span {
+    font-weight: bold;
+    color: #D8B7A6; /* Warm beige for emphasis */
+}
+
+/* Decorative Divider */
+.divider {
+    margin: 30px 0;
+    border: none;
+    border-top: 2px dashed #D8B7A6; /* Warm beige dashed line */
+}
+
+/* Image Styling */
+.recipe-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Go Back Button */
+.recipe-page .go-back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #F3C6B8; /* Dusty rose */
+    padding: 10px 15px;
+    color: #4A4A4A; /* Dark grey */
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.recipe-page .go-back-button:hover {
+    background-color: #D8B7A6; /* Warm beige hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Remove bullet points from both Ingredients and Tips lists */
+ul.ingredients-list, ul.tips-list {
+    list-style-type: none;  /* Removes the dots for both lists */
+    padding-left: 0;        /* Removes default padding */
+}
+
+/* Container for the two images */
+.image-container {
+    display: flex;            /* Use flexbox to align the images in a row */
+    justify-content: space-between;  /* Space out the images equally */
+    gap: 20px;                /* Adds some space between the images */
+    margin-top: 20px;         /* Add top margin to separate from content above */
+}
+
+/* Recipe Image */
+.recipe-image {
+    width: 48%;               /* Each image takes up 48% of the container's width */
+    height: auto;             /* Maintain the aspect ratio */
+    border-radius: 10px;      /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+.recipe-frame {
+    border: 2px solid #333; /* Dark border for the frame */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Max width for the frame */
+    background-color: #f9f9f9; /* Light background for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+/* Last Updated Section */
+.last-updated {
+    text-align: center;
+    font-size: 14px;
+    color: #4A4A4A;
+    margin: -10px 0;  /* Adds space between the last updated text and footer */
+}
+
+
+/* Container for bubbles */
+#bubbles-container {
+    position: fixed; /* Covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interference with clicks */
+    z-index: 1; /* Keep it above the background but below content */
+}
+
+/* Bubbles styling */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3); /* Transparent effect */
+    animation: float 20s infinite; /* Float animation */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth floating */
+    will-change: transform, opacity; /* Optimization for performance */
+    
+    /* Bigger bubble size */
+    width: 2000px; /* Set bubble size */
+    height: 2000px; /* Set bubble size */
+}
+
+/* Keyframes for bubble animation */
+@keyframes float {
+    0% {
+        transform: translate(0, 0); /* Start position */
+        opacity: 0.3; /* Start with some transparency */
+    }
+    50% {
+        transform: translate(30vw, -40vh); /* Float diagonally */
+        opacity: 0.5; /* Become slightly more visible */
+    }
+    100% {
+        transform: translate(-30vw, -100vh); /* End offscreen */
+        opacity: 0; /* Fade out completely */
+    }
+}
+
+/* Styling for the image grid */
+.image-grid {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Add a gap between the images */
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill its container */
+    max-width: 250px; /* Restrict maximum width */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
