@@ -20,23 +20,26 @@
                 <li>Sở thích: làm scrapbook, sưu tầm squishmallows, học hỏi những điều mới, spend time với con gái và gia đình.</li>
                 <li>Tình trạng: not yet married.</li>
                 <li>Quote yêu thích: "be the change that you want to see in the world".</li>
-                <li>Màu yêu thích: nâu, đỏ, hồng.</li>
-                <li>Facts: làm biếng nấu ăn nhưng thích ăn ngon lol.</li>
+                <li>Màu yêu thích: đen, trắng, xanh biển.</li>
+                <li>Màu phù hợp: nâu, vàng, đỏ, hồng.</li>
+                <li>Facts: làm biếng nấu ăn nhưng nấu ăn ngon lol.</li>
             </ul>
         </div>
 
-        <!-- Clickable Pictures Section -->
+        <!-- Image Grid Section -->
         <div class="image-grid">
+            <!-- First Card Deck -->
             <div class="image-container">
-                <img src="https://i.imgur.com/hX4UVF7.jpeg" alt="Image 1" onclick="toggleImage(this, 'https://i.imgur.com/hX4UVF7.jpeg', 'https://i.imgur.com/aGSSljj.jpeg')">
+                <img src="https://i.imgur.com/8ydlwED.jpeg" alt="Image 1" onclick="cycleImages(this, ['https://i.imgur.com/8ydlwED.jpeg', 'https://i.imgur.com/B0HGGO1.jpeg', 'https://i.imgur.com/ZtOhcUJ.jpeg'])">
             </div>
+            <!-- Second Card Deck -->
             <div class="image-container">
-                <img src="https://i.imgur.com/3RrZ5cD.jpeg" alt="Image 2" onclick="toggleImage(this, 'https://i.imgur.com/3RrZ5cD.jpeg', 'https://i.imgur.com/M3Fc1C9.jpeg')">
+                <img src="https://i.imgur.com/XwGAd6U.jpeg" alt="Image 4" onclick="cycleImages(this, ['https://i.imgur.com/XwGAd6U.jpeg', 'https://i.imgur.com/zuzviZS.jpeg', 'https://i.imgur.com/Cnzo0M5.jpeg'])">
             </div>
+            <!-- Third Card Deck -->
             <div class="image-container">
-                <img src="https://i.imgur.com/Pj4e0fP.jpeg" alt="Image 3" onclick="toggleImage(this, 'https://i.imgur.com/Pj4e0fP.jpeg', 'https://i.imgur.com/MeErRof.jpeg')">
+                <img src="https://i.imgur.com/eBkQHCj.jpeg" alt="Image 7" onclick="cycleImages(this, ['https://i.imgur.com/eBkQHCj.jpeg', 'https://i.imgur.com/IZxQlC5.jpeg', 'https://i.imgur.com/ve5LuaG.jpeg'])">
             </div>
-            
         </div>
 
         <button onclick="window.location.href='blog.html'" class="go-back-button">Go Back</button>
@@ -47,9 +50,14 @@
     </footer>
 
     <script>
-        // JavaScript to toggle between images
-        function toggleImage(imgElement, img1, img2) {
-            imgElement.src = imgElement.src.includes(img1) ? img2 : img1;
+        // Function to cycle through images
+        function cycleImages(imgElement, imageArray) {
+            // Get the current image index in the array
+            const currentIndex = imageArray.indexOf(imgElement.src.split('/').pop());
+            // Calculate the next index (looping back to 0 if at the end)
+            const nextIndex = (currentIndex + 1) % imageArray.length;
+            // Set the image source to the next image
+            imgElement.src = imageArray[nextIndex];
         }
     </script>
 </body>
