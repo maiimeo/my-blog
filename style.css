@@ -499,11 +499,6 @@ ul.ingredients-list, ul.tips-list {
     padding: 20px;
 }
 
-.image-container {
-    flex: 1; /* Make all columns equal width */
-    text-align: center; /* Center-align images */
-}
-
 .image-container img {
     width: 100%; /* Make the image fill its container */
     max-width: 250px; /* Restrict maximum width */
