@@ -52,13 +52,18 @@
     <script>
         // Function to cycle through images
         function cycleImages(imgElement, imageArray) {
-            // Get the current image index in the array
-            const currentIndex = imageArray.indexOf(imgElement.src.split('/').pop());
-            // Calculate the next index (looping back to 0 if at the end)
-            const nextIndex = (currentIndex + 1) % imageArray.length;
-            // Set the image source to the next image
-            imgElement.src = imageArray[nextIndex];
-        }
+    // Get the current image URL
+    const currentSrc = imgElement.src;
+
+    // Find the current index of the image in the array
+    const currentIndex = imageArray.indexOf(currentSrc);
+
+    // Calculate the next index (loop back to 0 if at the end)
+    const nextIndex = (currentIndex + 1) % imageArray.length;
+
+    // Set the image source to the next image
+    imgElement.src = imageArray[nextIndex];
+}
     </script>
 </body>
 </html>
