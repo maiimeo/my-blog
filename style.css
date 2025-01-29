@@ -510,14 +510,6 @@ ul.ingredients-list, ul.tips-list {
     transition: transform 0.3s;
 }
 
-.post {
-    background-color: #fff; /* Nền trắng */
-    padding: 20px; /* Thêm padding */
-    border-radius: 8px; /* Bo góc */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-    margin: 20px 0; /* Thêm khoảng cách */
-}
-
 .image-container img:hover {
     transform: scale(1.05);
 }
