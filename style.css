@@ -213,8 +213,8 @@ nav ul {
     margin: 15px 0;
     background-color: #F2ECE3;  /* Soft beige */
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
     box-shadow: none;
     transition: none;
 }
@@ -508,6 +508,14 @@ ul.ingredients-list, ul.tips-list {
     cursor: pointer;
     border-radius: 10px;
     transition: transform 0.3s;
+}
+
+.post {
+    background-color: #fff; /* Nền trắng */
+    padding: 20px; /* Thêm padding */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    margin: 20px 0; /* Thêm khoảng cách */
 }
 
 .image-container img:hover {
