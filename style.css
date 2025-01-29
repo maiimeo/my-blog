@@ -206,6 +206,12 @@ nav ul {
     word-spacing: 2px; /* Add spacing between words */
     font-size: 1.1em;
 }
+@media (max-width: 768px) {
+    .blog-page {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 
 /* Blog List */
