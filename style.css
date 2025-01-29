@@ -5,14 +5,14 @@ body {
     padding: 0;
     background-color: #F2ECE3;  /* Soft beige */
     color: #4A4A4A;  /* Warm dark grey */
-    min-height: 100vh; /* Ensure the page takes at least the full height of the viewport */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
 
 /* Main Content */
 main {
-    flex: 1; /* Makes the main content flexible and pushes the footer to the bottom */
+    flex: 1; /* Dem footer xuong duoi trang */
 }
 
 /* Footer */
@@ -21,10 +21,10 @@ footer {
     color: #4A4A4A;  /* Dark grey */
     text-align: center;
     padding: 20px 0;
-    position: relative; /* Ensures footer will stay at the bottom of the page */
+    position: relative; /* chac chan footer nam o duoi cuoi trang */
     width: 100%;
     font-size: 14px;
-    margin-top: 20px; /* Adds some space before the footer */
+    margin-top: 20px; /* them khoang trong */
     /* For fixed footer at all times: position: fixed; bottom: 0; */
 }
 
