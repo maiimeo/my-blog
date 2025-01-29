@@ -200,10 +200,10 @@ nav ul {
     padding-left: 150px;
     padding-right: 150px;
     font-weight: normal;
-    text-align: left;
-    line-height: 1.6; /* Increase line height for better readability */
-    letter-spacing: normal; /* Slightly increase space between characters */
-    word-spacing: 2px; /* Add spacing between words */
+    text-align: justify;
+    line-height: 1.6; 
+    letter-spacing: normal; /* khoang cach giua letter */
+    word-spacing: 2px; /* khoang cach giua words */
     font-size: 1.1em;
 }
 @media (max-width: 768px) {
