@@ -529,7 +529,7 @@ ul.ingredients-list, ul.tips-list {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Georgia', serif;
 }
-.img {
+.image {
     max-width: 80%;  /* Giới hạn chiều rộng tối đa là 80% của phần tử chứa */
     height: auto;    /* Giữ tỷ lệ gốc của hình ảnh */
     border-radius: 8px; /* Bo tròn góc hình ảnh */
