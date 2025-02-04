@@ -539,9 +539,11 @@ ul.ingredients-list, ul.tips-list {
 }
 
 .image img {
-    width: 100%;
+    width: 80%; /* Adjusts the image size to be smaller */
+    max-width: 250px; /* Limits the maximum width */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Centers images in the grid */
 }
 
