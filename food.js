@@ -1,6 +1,6 @@
 // Function to set the background with food icons
 function setFoodBackground() {
-    const foodBackgroundImage = 'url("https://i.imgur.com/dzK4xQ1.jpeg")'; 
+    const foodBackgroundImage = 'url("https://i.imgur.com/hZdqXlQ.jpeg")'; 
     const foodBackgroundSize = 'cover'; 
     const foodBackgroundPosition = 'center';
     const foodBackgroundAttachment = 'fixed';
