@@ -529,6 +529,11 @@ ul.ingredients-list, ul.tips-list {
     font-family: 'Georgia', serif;
     background-color: #fff;
 }
+.travel-frame {
+    max-width: 2000px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
 
 .image {
     display: grid;
