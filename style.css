@@ -521,13 +521,13 @@ ul.ingredients-list, ul.tips-list {
 }
 
 .travel-page {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Georgia', serif;
-    background-color: #F2ECE3;
+    background-color: #fff;
 }
 .image {
     max-width: 80%;  /* Giới hạn chiều rộng tối đa là 80% của phần tử chứa */
