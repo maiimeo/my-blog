@@ -521,7 +521,7 @@ ul.ingredients-list, ul.tips-list {
 }
 
 .travel-page {
-    max-width: 1500px;
+    max-width: 2000px; 
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
@@ -529,6 +529,7 @@ ul.ingredients-list, ul.tips-list {
     font-family: 'Georgia', serif;
     background-color: #fff;
 }
+
 .image {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
