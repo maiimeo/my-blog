@@ -530,11 +530,18 @@ ul.ingredients-list, ul.tips-list {
     background-color: #fff;
 }
 .image {
-    max-width: 80%;  /* Giới hạn chiều rộng tối đa là 80% của phần tử chứa */
-    height: auto;    /* Giữ tỷ lệ gốc của hình ảnh */
-    border-radius: 8px; /* Bo tròn góc hình ảnh */
-    margin: 10px 0;   /* Thêm khoảng cách giữa các hình ảnh */
-    display: block;   /* Đảm bảo hình ảnh hiển thị như một phần tử khối */
-    margin-left: auto; /* Canh giữa hình ảnh */
-    margin-right: auto; /* Canh giữa hình ảnh */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
 }
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
