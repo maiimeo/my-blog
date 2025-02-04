@@ -553,4 +553,6 @@ ul.ingredients-list, ul.tips-list {
     height: auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.travel-page h1 {
+    margin: 0; 
+    font-size: 2em; 
