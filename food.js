@@ -3,6 +3,7 @@ function setFoodBackground() {
     const foodBackgroundImage = 'url("https://i.imgur.com/FRz5L8e.jpeg")'; 
     const foodBackgroundSize = 'cover'; 
     const foodBackgroundPosition = 'center';
+    const foodBackgroundAttachment = 'fixed';
 
    
     const travelPage = document.querySelector('.travel-page');
@@ -10,6 +11,7 @@ function setFoodBackground() {
     travelPage.style.backgroundSize = foodBackgroundSize;
     travelPage.style.backgroundPosition = foodBackgroundPosition;
     travelPage.style.backgroundRepeat = 'no-repeat'; 
+    travelPage.style.backgroundAttachment = foodBackgroundAttachment;
 }
 
 
