@@ -541,7 +541,7 @@ ul.ingredients-list, ul.tips-list {
 
 .image {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(5, 1fr); /* 3 columns */
     gap: 15px;
     padding: 20px;
     justify-content: center;
