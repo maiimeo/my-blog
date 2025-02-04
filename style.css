@@ -528,6 +528,8 @@ ul.ingredients-list, ul.tips-list {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Georgia', serif;
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .travel-frame {
     border: 2px solid #333;
