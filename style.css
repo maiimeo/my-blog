@@ -564,6 +564,7 @@ ul.ingredients-list, ul.tips-list {
 }
 
 
+
 /* Book Layout */
 #book {
     display: flex;
@@ -572,7 +573,7 @@ ul.ingredients-list, ul.tips-list {
 }
 
 .book-container {
-    perspective: 1000px;  /* Adds 3D effect to the book */
+    perspective: 1000px;
 }
 
 .book {
@@ -595,7 +596,7 @@ ul.ingredients-list, ul.tips-list {
     height: 100%;
     border: 1px solid #ccc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: rotateY(180deg);  /* The cover starts at the back */
+    transform: rotateY(180deg);
 }
 
 .book-cover h2 {
@@ -615,6 +616,8 @@ ul.ingredients-list, ul.tips-list {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .page {
@@ -645,13 +648,4 @@ ul.ingredients-list, ul.tips-list {
 .book-image {
     max-width: 100%;
     height: auto;
-}
-
-/* Add some space between pages */
-.page-wrapper > .page:nth-child(even) {
-    left: 50%;
-}
-
-.page-wrapper > .page:nth-child(odd) {
-    left: 0;
 }
