@@ -1,15 +1,18 @@
 let currentPage = 0;
-const pages = document.querySelectorAll(".page");
-const totalPages = pages.length / 2;  // Divide by 2 because each page is in pairs (left-right)
+const book = document.querySelector(".book");
+const pages = document.querySelectorAll(".page-wrapper .page");
+const totalPages = pages.length;
 
-function changePage(direction) {
-    currentPage += direction;
-    if (currentPage < 0) {
-        currentPage = totalPages - 1;
-    } else if (currentPage >= totalPages) {
-        currentPage = 0;
+function flipPage() {
+    if (currentPage < totalPages - 1) {
+        currentPage++;
+    } else {
+        currentPage = 0;  // Reset to the first page
     }
 
-    const book = document.querySelector(".book");
-    book.style.transform = `translateX(-${currentPage * 50}%)`;
+    book.style.transform = `rotateY(${currentPage * -180}deg)`;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    setInterval(flipPage, 3000);  // Automatically flip pages every 3 seconds
+});
