@@ -13,48 +13,49 @@
 
     <main>
         <section id="book">
-            <div class="book">
-                <div class="page left-page" id="page1">
-                    <div class="content">
-                        <h2>About Tay Ninh</h2>
-                        <p>Tay Ninh is a province located in the southeastern region of Vietnam, famous for its beautiful landscapes and religious sites.</p>
+            <div class="book-container">
+                <div class="book">
+                    <!-- Book Cover -->
+                    <div class="book-cover">
+                        <h2>Tây Ninh</h2>
+                        <p>Explore the beauty and culture of Tay Ninh.</p>
                     </div>
-                </div>
-                <div class="page right-page" id="page2">
-                    <div class="content">
-                        <h2>Top Attractions</h2>
-                        <p>Ba Den Mountain is the highest peak in the Southeast region, offering beautiful views and historical temples.</p>
-                    </div>
-                </div>
-                <div class="page left-page" id="page3">
-                    <div class="content">
-                        <h2>Upcoming Events</h2>
-                        <ul>
-                            <li>Annual Tay Ninh Festival - March 2025</li>
-                            <li>Ba Den Mountain Hiking - June 2025</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="page right-page" id="page4">
-                    <div class="content">
-                        <img src="tayninh-about.jpg" alt="Tay Ninh landscape" class="book-image">
-                    </div>
-                </div>
-                <div class="page left-page" id="page5">
-                    <div class="content">
-                        <img src="ba-den-mountain.jpg" alt="Ba Den Mountain" class="book-image">
-                    </div>
-                </div>
-                <div class="page right-page" id="page6">
-                    <div class="content">
-                        <img src="tayninh-festival.jpg" alt="Tay Ninh Festival" class="book-image">
+
+                    <!-- Pages (Left and Right sides) -->
+                    <div class="page-wrapper">
+                        <div class="page">
+                            <div class="left-side">
+                                <h2>About Tay Ninh</h2>
+                                <p>Tay Ninh is a province located in the southeastern region of Vietnam, famous for its beautiful landscapes and religious sites.</p>
+                            </div>
+                            <div class="right-side">
+                                <img src="tayninh-about.jpg" alt="Tay Ninh landscape" class="book-image">
+                            </div>
+                        </div>
+                        <div class="page">
+                            <div class="left-side">
+                                <h2>Top Attractions</h2>
+                                <p>Ba Den Mountain is the highest peak in the Southeast region, offering beautiful views and historical temples.</p>
+                            </div>
+                            <div class="right-side">
+                                <img src="ba-den-mountain.jpg" alt="Ba Den Mountain" class="book-image">
+                            </div>
+                        </div>
+                        <div class="page">
+                            <div class="left-side">
+                                <h2>Upcoming Events</h2>
+                                <ul>
+                                    <li>Annual Tay Ninh Festival - March 2025</li>
+                                    <li>Ba Den Mountain Hiking - June 2025</li>
+                                </ul>
+                            </div>
+                            <div class="right-side">
+                                <img src="tayninh-festival.jpg" alt="Tay Ninh Festival" class="book-image">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Navigation Buttons -->
-            <button id="prevBtn" class="nav-button" onclick="changePage(-1)">Previous</button>
-            <button id="nextBtn" class="nav-button" onclick="changePage(1)">Next</button>
         </section>
     </main>
 
