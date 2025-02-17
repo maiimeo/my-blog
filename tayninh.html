@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tây Ninh - Mảnh Đất Tình</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,43 +12,48 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Tay Ninh</h2>
-            <img src="tayninh-about.jpg" alt="Tay Ninh landscape" class="section-image">
-            <p>Tay Ninh is a province located in the southeastern region of Vietnam, famous for its beautiful landscapes and religious sites.</p>
-        </section>
-
-        <section id="attractions">
-            <h2>Top Attractions</h2>
-            <article>
-                <h3>Ba Den Mountain</h3>
-                <img src="ba-den-mountain.jpg" alt="Ba Den Mountain" class="attraction-image">
-                <p>Ba Den Mountain is the highest peak in the Southeast region, offering beautiful views and historical temples.</p>
-            </article>
-            <article>
-                <h3>Cao Dai Temple</h3>
-                <img src="cao-dai-temple.jpg" alt="Cao Dai Temple" class="attraction-image">
-                <p>This unique temple is the center of Cao Dai religion, an interesting mix of different religious influences.</p>
-            </article>
-        </section>
-
-        <section id="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li>Annual Tay Ninh Festival - March 2025</li>
-                <li>Ba Den Mountain Hiking - June 2025</li>
-            </ul>
-            <img src="tayninh-festival.jpg" alt="Tay Ninh Festival" class="section-image">
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions, feel free to reach out to us!</p>
+        <section id="book">
+            <div class="book-container">
+                <div class="page" id="page1">
+                    <div class="left">
+                        <h2>About Tay Ninh</h2>
+                        <p>Tay Ninh is a province located in the southeastern region of Vietnam, famous for its beautiful landscapes and religious sites.</p>
+                    </div>
+                    <div class="right">
+                        <img src="tayninh-about.jpg" alt="Tay Ninh landscape" class="page-image">
+                    </div>
+                </div>
+                <div class="page" id="page2">
+                    <div class="left">
+                        <h2>Top Attractions</h2>
+                        <p>Ba Den Mountain is the highest peak in the Southeast region, offering beautiful views and historical temples.</p>
+                    </div>
+                    <div class="right">
+                        <img src="ba-den-mountain.jpg" alt="Ba Den Mountain" class="page-image">
+                    </div>
+                </div>
+                <div class="page" id="page3">
+                    <div class="left">
+                        <h2>Upcoming Events</h2>
+                        <ul>
+                            <li>Annual Tay Ninh Festival - March 2025</li>
+                            <li>Ba Den Mountain Hiking - June 2025</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <img src="tayninh-festival.jpg" alt="Tay Ninh Festival" class="page-image">
+                    </div>
+                </div>
+            </div>
+            <button id="prevBtn" class="nav-button" onclick="changePage(-1)">Previous</button>
+            <button id="nextBtn" class="nav-button" onclick="changePage(1)">Next</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Maimeo Blog. All rights reserve.</p>
+        <p>&copy; 2025 Maimeo Blog. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
