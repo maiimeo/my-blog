@@ -1,8 +1,17 @@
-document.addEventListener('click', function () {
-    const audio = document.getElementById('bg-music');
+const audio = document.getElementById('bg-music');
 
-    // Check if the audio is paused and then play it
+if (sessionStorage.getItem('audioPlaying') === 'true') {
+    audio.play();
+}
+
+document.addEventListener('click', function () {
     if (audio.paused) {
         audio.play();
+        sessionStorage.setItem('audioPlaying', 'true');  
     }
+});
+
+// Ensure audio stops when leaving the page
+window.addEventListener('beforeunload', function () {
+    sessionStorage.removeItem('audioPlaying');  
 });
