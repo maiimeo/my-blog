@@ -3,4 +3,4 @@ document.addEventListener('click', function () {
     if (audio.paused) {
         audio.play();
     }
-}, { once: true }); 
+});
